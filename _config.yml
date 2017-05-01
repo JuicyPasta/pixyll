@@ -1,10 +1,10 @@
 # Site settings
-title:       Pixyll
-email:       your_email@example.com
-author:      John Otander
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
+title:       Jackson Darrow
+email:       jackson.darrow@gmail.com
+author:      Jackson Darrow
+description: "website for miscellaneous projects"
 baseurl:     ""
-url:         "http://pixyll.com"
+url:         "http://jldarrow.github.io/"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -17,16 +17,16 @@ google_tag_manager:
 bing_verification:
 
 # Optional features
-animated:             false
+animated:             true
 show_related_posts:   false
 show_post_footers:    false
 show_social_icons:    false
-ajaxify_contact_form: false
-enable_mathjax: false
-extended_fonts: false
-enable_anchorjs: false
+ajaxify_contact_form: true
+enable_mathjax: true
+extended_fonts: true
+enable_anchorjs: true
 # Preview image for social media aka og:image and twitter:image
-post_preview_image: false
+post_preview_image: true
 
 # Facebook Page integration
 # (for instant articles and other stuff)
@@ -44,7 +44,7 @@ facebook_appid:
 facebook_comments_number: 10
 
 # Social icons
-github_username:
+github_username: juicypasta
 bitbucket_username:
 stackoverflow_id:
 twitter_username:
@@ -108,6 +108,10 @@ text:
 
 # Build settings
 markdown:     kramdown
+highlighter:  rouge
+kramdown: 
+  input: GFM
+  syntax_highlighter: rouge
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty
@@ -119,3 +123,5 @@ gems:
   - jekyll-sitemap
 # https://github.com/jekyll/jekyll/issues/2938
 exclude: [vendor]
+
+host: 0.0.0.0
